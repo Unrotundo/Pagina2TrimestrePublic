@@ -1,0 +1,116 @@
+
+*{/*Para quitarle los márgines a la página entera*/
+    margin:0px;
+    padding: 0px;
+}
+body{
+    font-family: "Arial";
+}
+.contenedor{
+    padding: 60px;/*Separación entre las secciones*/
+    max-width: 1000px;/*No puede haber nada con un ancho mayor a 1000px*/
+    margin: auto;/*Con el margin auto se me colocará centrado*/
+    overflow:hidden;/*Si algo se sale del contenedor lo esconde*/
+}
+.titulo{
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+/*Header*/
+header{
+    width: 100%;
+    height: 600px;
+    /*Estas lineas de código las saqué de esta página: https://uigradients.com/#Bighead, y le añadí transparencia con el formato hsla, y una imágen de fondo*/
+    background: #c94b4b;
+    background: linear-gradient(to right, hsla(296,76%, 31%,0.5), hsla(0,73%,69%,0.5)),url("../img/inicio1.jpg");
+    background-size: cover;/*Para que ocupe lo que pueda*/
+    background-attachment: fixed;/*Para que la imagen del fondo se quede fija*/
+    position:relative;
+}
+nav{
+    text-align: right;
+    padding: 30px 50px 0px 0px;
+}
+nav a{
+    color:white;
+    margin-right: 10px;
+    text-decoration: none;/*Para que no esté subrayado*/
+}
+nav a:hover{/*Para que esté subrayado y se vea en negro cuando pasemos el ratón por encima*/
+    color: black;
+    text-decoration: underline;
+}
+.textos-header{
+    display:flex;/*Tipo de organización*/
+    height: 430px;
+    text-align: center;/*Para que se centre en el medio del ancho*/
+    justify-content: center;/*Para que se centre en el medio del alto*/
+    flex-direction: column;/*Para que se pongan uno encima del otro*/
+}
+.textos-header h1{
+    font-size: 50px;
+    color: white;
+}
+.ola{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+}
+/*Main*/
+    /*Explicación página*/
+
+    .Explicacion-pagina{
+        margin-left: 20%;
+        margin-right: 20%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .imagen-intro{
+        padding-right: 50px;
+        width:48%;
+    }
+    .explicacion-pagina .contenido-textos{
+        width: 48%;
+    }
+    .contenido-textos h3{
+        margin-bottom: 15px;
+    }
+    .contenido-textos h3 span{/*Para que aparezca la bola alrededor del número */
+        background: #642a73;
+        color: white;
+        border-radius: 40%;
+        display:inline-block;
+        text-align: center;
+        width:30px;
+        height: 30px;
+        padding: 3px;
+        margin-right: 5px;
+    }
+    .contenido-textos p{
+        padding: 0px 0px 30px 15px;
+        font-weight: 100;
+        text-align: justify;
+    }
+
+    /*Películas*/
+    .peliculas{
+        background: #eee8e8;
+    }
+    .contenedor-peliculas{
+        diplay: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .imagen-peliculas{
+        width:24%;
+        margin-bottom: 10px;
+    }
+    .imagen-peliculas>img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+
+    }
