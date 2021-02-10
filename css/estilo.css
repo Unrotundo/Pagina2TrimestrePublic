@@ -1,24 +1,32 @@
-
 *{/*Para quitarle los márgines a la página entera*/
     margin:0px;
     padding: 0px;
+    box-sizing: border-box;
 }
+
 body{
     font-family: "Arial";
 }
-.contenedor{
-    padding: 60px;/*Separación entre las secciones*/
-    max-width: 1000px;/*No puede haber nada con un ancho mayor a 1000px*/
-    margin: auto;/*Con el margin auto se me colocará centrado*/
-    overflow:hidden;/*Si algo se sale del contenedor lo esconde*/
+.grid{
+    display: grid;/*Declaramos el sistema grid*/
+    grid-template-columns: repeat(12,1fr);/*Le decimos que tenga 12 columnas de 1 fracción*/
+    width: 90%;
+    max-width: 1100px;
+    height: 100%;
+    margin: auto;/*Para que se ponga en el centro de la pantalla*/
+    gap: 10px;
+    overflow: hidden;/*Para que si se sale algun elemento se oculte*/
+    align-items: center;/*Propidedad que hace que se pongan en el centro*/
 }
+
+/*HEADER*/
 .titulo{
+    padding-top: 30px;
     color: #642a73;
     font-size: 30px;
     text-align: center;
     margin-bottom: 60px;
 }
-/*Header*/
 header{
     width: 100%;
     height: 600px;
@@ -32,6 +40,7 @@ header{
 nav{
     text-align: right;
     padding: 30px 50px 0px 0px;
+    background-attachment: fixed;
 }
 nav a{
     color:white;
@@ -41,6 +50,7 @@ nav a{
 nav a:hover{/*Para que esté subrayado y se vea en negro cuando pasemos el ratón por encima*/
     color: black;
     text-decoration: underline;
+    font-size: 20px;
 }
 .textos-header{
     display:flex;/*Tipo de organización*/
@@ -54,63 +64,123 @@ nav a:hover{/*Para que esté subrayado y se vea en negro cuando pasemos el rató
     color: white;
 }
 .ola{
+    height: 150px;
+    overflow: hidden;
     position: absolute;
     bottom: 0%;
     width: 100%;
 }
-/*Main*/
-    /*Explicación página*/
+.ola .forma-ola{
+    height: 100%;
+    width: 100%;
+}
 
-    .Explicacion-pagina{
-        margin-left: 20%;
-        margin-right: 20%;
-        display: flex;
-        justify-content: space-evenly;
-    }
-    .imagen-intro{
-        padding-right: 50px;
-        width:48%;
-    }
-    .explicacion-pagina .contenido-textos{
-        width: 48%;
-    }
-    .contenido-textos h3{
-        margin-bottom: 15px;
-    }
-    .contenido-textos h3 span{/*Para que aparezca la bola alrededor del número */
-        background: #642a73;
-        color: white;
-        border-radius: 40%;
-        display:inline-block;
-        text-align: center;
-        width:30px;
-        height: 30px;
-        padding: 3px;
-        margin-right: 5px;
-    }
-    .contenido-textos p{
-        padding: 0px 0px 30px 15px;
-        font-weight: 100;
-        text-align: justify;
-    }
+/*MAIN*/
+/*Intro*/
+.imagen-intro{
+    padding-right: 50px;
+    width: 100%;
+    height: auto;
+    grid-column: 1/7;
+}
+.contenido-textos{
+    grid-column:7/13 ;
+}
+.contenido-textos h3{
+    margin-bottom: 15px;
+}
+.contenido-textos h3 span{/*Para que aparezca la bola alrededor del número */
+    background: #642a73;
+    color: white;
+    border-radius: 50%;
+    display:inline-block;
+    text-align: center;
+    width:30px;
+    height: 30px;
+    padding: 3px;
+    margin-right: 5px;
+}
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 100;
+    text-align: justify;
+}
+.imagentonta{
+    width: 95%;
+    max-width: 400px;
+}
+/*Galería*/
+.peliculas{
+    background: #eee8e8;
+    padding: 20px;
+}
+.imagenGaleria{
+    max-width: 250px;
+    max-height: 150px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 rgb(0,0,0);/*Para que tenga sombreado*/
+    padding: 2px;
 
-    /*Películas*/
-    .peliculas{
-        background: #eee8e8;
-    }
-    .contenedor-peliculas{
-        diplay: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-    }
-    .imagen-peliculas{
-        width:24%;
-        margin-bottom: 10px;
-    }
-    .imagen-peliculas>img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
+}
+[class^="imagen-peliculas"]{
+    grid-column: span 3;
+}
+[class^="texto-peliculas"]{
+    position: absolute;
+    grid-column: span 3;
+    width: 20%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(273,91%,27%,0.7);
+    transition: transform 0.5s;
+}
+.imagenGaleria:hover .texto-peliculas{
+    transform: scale(1);
+}
 
-    }
+/*Footer*/
+footer{
+    background: #414141;
+}
+[class^="contenido-footer"]{
+    grid-column: span 4;
+    text-align: center;
+    padding: 60px;
+}
+.contenido-footer h4{
+    color:white;
+    border-bottom: 3px solid #8e4aa5;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+.contenido-footer p{
+    color:#ccc;
+}
+.contenido-footer span{
+    background: #8e4aa5;
+    border-radius: 50%;
+    display:inline-block;
+    text-align: center;
+    width:50px;
+    height: 50px;
+    padding: 8px;
+    margin-top: -100px;
+}
+.contenido-footer img{
+    filter: invert(100%);
+}
+.contenido-footer span:hover{
+    transform: scale(1.5);
+    background: #d077ea;
+}
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+    color: #9e9797;
+}
+
+
+
+

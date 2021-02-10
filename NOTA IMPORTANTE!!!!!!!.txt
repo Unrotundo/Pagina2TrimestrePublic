@@ -1,6 +1,0 @@
-Como en el trimestre pasado, se me dio bastante mal esta asignatura empecé a buscar información por mi cuenta. Y esta página la he hehcho de esa manera. Podrás apreciar que
-la página no está aún acabada, ya que en vez de utilizar el sistema grid he utilizado el sistema flexbox, y me dí cuenta cuando llevaba la mitad de la página hecha. 
-
-Si quieres para la semana que viene te la puedo hacer entera y con el grid sistem.
-
-Un saludo Jose Luis.

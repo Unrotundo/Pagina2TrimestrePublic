@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b3dc8031-ed8c-4f1f-b752-5777bcfd588a" name="Default Changelist" comment="" />
+    <list default="true" id="3b05e1dc-fc12-4dda-8eff-cbc3b7f084aa" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,65 +10,31 @@
   <component name="ComposerSettings">
     <execution />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-        <option value="CSS File" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectId" id="1nL2WZ6T7ooYHLBqSsYRvbSiQAg" />
+  <component name="ProjectId" id="1oD4nstiiO7OBijRHFNzWEUNRid" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../20_Enero_2021" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b3dc8031-ed8c-4f1f-b752-5777bcfd588a" name="Default Changelist" comment="" />
-      <created>1611155083027</created>
+      <changelist id="3b05e1dc-fc12-4dda-8eff-cbc3b7f084aa" name="Default Changelist" comment="" />
+      <created>1612807996643</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1611155083027</updated>
-      <workItem from="1611155084567" duration="3449000" />
-      <workItem from="1611165889876" duration="9934000" />
-      <workItem from="1611176182031" duration="216000" />
-      <workItem from="1611512725229" duration="125000" />
+      <updated>1612807996643</updated>
+      <workItem from="1612807997878" duration="5501000" />
+      <workItem from="1612980014510" duration="9072000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="CUSTOM_BOOLEAN_PROPERTIES">
-                <map>
-                  <entry key="Show.Git.Branches" value="false" />
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
