@@ -40,7 +40,8 @@ header{
 nav{
     text-align: right;
     padding: 30px 50px 0px 0px;
-    background-attachment: fixed;
+    position: sticky;
+    top:0;
 }
 nav a{
     color:white;
@@ -73,6 +74,10 @@ nav a:hover{/*Para que esté subrayado y se vea en negro cuando pasemos el rató
 .ola .forma-ola{
     height: 100%;
     width: 100%;
+}
+.forma-ola2{
+    stroke: none;
+    fill: #fff;
 }
 
 /*MAIN*/
