@@ -1,58 +1,152 @@
-input {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+:root{
+    --colorTextos: #49454567
+}
+
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
 }
 
-/* Style the submit button */
-input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
+body{
+    /*Le añadimos el fondo con degradado*/
+    background: linear-gradient(to right, hsla(296,76%, 31%,0.5), hsla(0,73%,69%,0.5)),url("../img/inicio1.jpg");
+    font-family: "Arial";
 }
 
-/* Style the container for inputs */
-.container {
-    background-color: #f1f1f1;
-    padding: 20px;
+header{
+    width: 100%;
+    height: 100px;
+    position:relative;
+}
+nav{
+    text-align: right;
+    padding: 30px 50px 0px 0px;
+    position: sticky;
+    top:0;
 }
 
-/* The message box is shown when the user clicks on the password field */
-#message {
-    display:none;
-    background: #f1f1f1;
-    color: #000;
+nav a{
+    color:white;
+    margin-right: 10px;
+    text-decoration: none;/*Para que no esté subrayado*/
+}
+nav a:hover{/*Para que esté subrayado y se vea en negro cuando pasemos el ratón por encima*/
+    color: black;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+main{
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    font-weight: 700;
+}
+
+form{
+    background: white;
+    padding: 40px 0;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255,0.8);
+    border-radius: 10px;
+}
+/*Estilo del registro en su totalidad*/
+.form{
+    width: 100%;
+    margin: auto;
+}
+
+form .grupo{
     position: relative;
-    padding: 20px;
-    margin-top: 10px;
+    margin: 45px;
 }
 
-#message p {
-    padding: 10px 35px;
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: #B06AB3;
+    padding-top: 20px;
+}
+/*estilo de cada apartado*/
+input{
+    background: none;
+    color: #c6c6c6;
     font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
 }
 
-/* Add a green text color and a checkmark when the requirements are right */
-.valid {
-    color: green;
+input:focus{
+    outline: none;
+    color: #5e5d5d;
 }
 
-.valid:before {
+label{
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: absolute;/*Lo encerramos en la clase grupo*/
+    bottom: 0;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease-in-out all;
+    pointer-events: none;
+}
+
+/*Con esto cuando input este en modo focus los hermanos heredaran esto*/
+input:focus~label,
+input:valid~label{/*Esto es para que cuando escribamos algo se aplique también*/
+    top: -14px;
+    font-size: 12px;
+    color: #c94b4b;
+}
+
+/*Esto es para que cuando hagas click la barra haga una animacion de salida*/
+.barra{
     position: relative;
-    left: -35px;
-    content: "&#10004;";
+    display: block;
+    width: 100%;
 }
 
-/* Add a red text color and an "x" icon when the requirements are wrong */
-.invalid {
-    color: red;
+.barra::before{
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0px;
+    position: absolute;
+    background: linear-gradient(to right, hsla(296,76%, 31%,0.5), hsla(0,73%,69%,0.5));
+    transition: 0.3s ease width;
+    left: 0;
 }
 
-.invalid:before {
-    position: relative;
-    left: -35px;
-    content: "&#10006;";
+input:focus~.barra::before{
+    width: 100%;
+}
+
+button{
+    background: linear-gradient(to right, hsla(296,76%, 31%,0.5), hsla(0,73%,69%,0.5));
+    border: none;
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    color: white;
+    height: 40px;
+    font-size: 16px;
+    cursor:pointer;
+}
+
+@media screen and (max-width: 500px){
+    .form{
+        width: 80%;
+    }
 }

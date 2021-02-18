@@ -4,28 +4,43 @@
     <meta charset="UTF-8">
     <title>Cuenta</title>
     <link rel="stylesheet" href="../css/estiloValidación.css">
-    <script src="../js/codigo.js"></script>
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
 </head>
+
 <body>
-    <div class="container">
-        <form action="/action_page.php">
-            <label for="usrname">Username</label>
-            <input type="text" id="usrname" name="usrname" required>
+    <header>
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="#">Acerca de</a>
+            <a href="#">Películas</a>
+            <a>|</a>
+            <a href="cuenta.html">Cuenta</a>
+        </nav>
+    </header>
+    <main>
+        <form action="" method="POST" id="form">
+            <div class="form">
+                <h1>Registro</h1>
+                <div class="grupo">
+                    <input type="text" name="" id="name"><span class="barra"></span>
+                    <label>Nombre</label>
+                </div>
+                <div class="grupo">
+                    <input type="email" name="" id="email"><span class="barra"></span>
+                    <label>Email</label>
+                </div>
+                <div class="grupo">
+                    <input type="password" name="" id="password"><span class="barra"></span>
+                    <label>Contraseña</label>
+                </div>
 
-            <label for="psw">Password</label>
-            <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
-
-            <input type="submit" value="Submit">
+                <button type="submit">Crear</button>
+                <p class="warnings" id="warnings"></p>
+            </div>
         </form>
-    </div>
 
-    <div id="message">
-        <h3>Password must contain the following:</h3>
-        <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
-        <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
-        <p id="number" class="invalid">A <b>number</b></p>
-        <p id="length" class="invalid">Minimum <b>8 characters</b></p>
-    </div>
+        <script src="../js/codigo.js"></script>
+    </main>
 </body>
 </html>
 

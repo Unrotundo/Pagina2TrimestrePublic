@@ -31,7 +31,6 @@ header{
     width: 100%;
     height: 600px;
     /*Estas lineas de código las saqué de esta página: https://uigradients.com/#Bighead, y le añadí transparencia con el formato hsla, y una imágen de fondo*/
-    background: #c94b4b;
     background: linear-gradient(to right, hsla(296,76%, 31%,0.5), hsla(0,73%,69%,0.5)),url("../img/inicio1.jpg");
     background-size: cover;/*Para que ocupe lo que pueda*/
     background-attachment: fixed;/*Para que la imagen del fondo se quede fija*/
