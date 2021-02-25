@@ -3,17 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/estiloIndex.css">
     <title>Cinema Paradise</title>
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon"><!--Para que aparezca un icono junto al título-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
 </head>
 <body>
     <header>
         <nav>
             <a href="index.html">Inicio</a>
-            <a href="#">Acerca de</a>
-            <a href="#">Películas</a>
+            <a href=".intro">Acerca de</a>
+            <a href=".peliculas">Películas</a>
             <a>|</a>
             <a href="html/cuenta.html">Cuenta</a>
         </nav>
@@ -47,64 +46,44 @@
         </section>
         <section class="peliculas">
             <h2 class="titulo">TOP 8 <br><br>Peliculas de la semana</h2>
-            <div class="imagen-peliculas">
-                <div class="grid">
-                    <div class="imagen-peliculas">
-                        <img src="img/película1.jpg" class="imagenGaleria">
-                        <div class="texto-peliculas">
-                            <img src="img/icono1(blanco).png">
-                            <p>Click para ver más</p>
-                        </div>
-                    </div>
-                    <div class="imagen-peliculas">
-                        <img src="img/película2.jpg" class="imagenGaleria">
-                        <div class="texto-peliculas">
-                            <img src="img/icono1(blanco).png">
-                            <p>Click para ver más</p>
-                        </div>
-                    </div>
-                    <div class="imagen-peliculas">
-                        <img src="img/película3.jpg" class="imagenGaleria">
-                        <div class="texto-peliculas">
-                            <img src="img/icono1(blanco).png">
-                            <p>Click para ver más</p>
-                        </div>
-                    </div>
-                    <div class="imagen-peliculas">
-                        <img src="img/película4.jpg" class="imagenGaleria">
-                        <div class="texto-peliculas">
-                            <img src="img/icono1(blanco).png">
-                            <p>Click para ver más</p>
-                        </div>
-                    </div>
-                    <div class="imagen-peliculas">
-                        <img src="img/película5.jpg" class="imagenGaleria">
-                        <div class="texto-peliculas">
-                            <img src="img/icono1(blanco).png">
-                            <p>Click para ver más</p>
-                        </div>
-                    </div>
-                    <div class="imagen-peliculas">
-                        <img src="img/película6.jpg" class="imagenGaleria">
-                        <div class="texto-peliculas">
-                            <img src="img/icono1(blanco).png">
-                            <p>Click para ver más</p>
-                        </div>
-                    </div>
-                    <div class="imagen-peliculas">
-                        <img src="img/película7.jpg" class="imagenGaleria">
-                        <div class="texto-peliculas">
-                            <img src="img/icono1(blanco).png">
-                            <p>Click para ver más</p>
-                        </div>
-                    </div>
-                    <div class="imagen-peliculas">
-                        <img src="img/película8.jpg" class="imagenGaleria">
-                        <div class="texto-peliculas">
-                            <img src="img/icono1(blanco).png">
-                            <p>Click para ver más</p>
-                        </div>
-                    </div>
+            <div class="slide-contenedor">
+                <div class="miSlider fade">
+                    <a href="https://www.google.com/?hl=es"><img src="img/película1.jpg"></a>
+                </div>
+                <div class="miSlider fade" onclick="location.replace('google.es');">
+                    <a href="google.es"><img onclick="location.replace('google.es');" src="img/película2.jpg"></a>
+                </div>
+                <div class="miSlider fade">
+                    <a href=""><img src="img/película3.jpg"></a>
+                </div>
+                <div class="miSlider fade">
+                    <a href=""><img src="img/película4.jpg"></a>
+                </div>
+                <div class="miSlider fade">
+                    <a href=""><img src="img/película5.jpg"></a>
+                </div>
+                <div class="miSlider fade">
+                    <a href=""><img src="img/película6.jpg"></a>
+                </div>
+                <div class="miSlider fade">
+                    <a href=""><img src="img/película7.jpg"></a>
+                </div>
+                <div class="miSlider fade">
+                    <a href=""><img src="img/película8.jpg"></a>
+                </div>
+                <div class="direcciones">
+                    <a class="atras" onclick="avanzaSlide(-1)">&#10094;</a>
+                    <a class="adelante" onclick="avanzaSlide(1)">&#10095;</a>
+                </div>
+                <div class="barras">
+                    <span class="barra active" onclick="posicionSlide(1)"></span>
+                    <span class="barra" onclick="posicionSlide(2)"></span>
+                    <span class="barra" onclick="posicionSlide(3)"></span>
+                    <span class="barra" onclick="posicionSlide(4)"></span>
+                    <span class="barra" onclick="posicionSlide(5)"></span>
+                    <span class="barra" onclick="posicionSlide(6)"></span>
+                    <span class="barra" onclick="posicionSlide(7)"></span>
+                    <span class="barra" onclick="posicionSlide(8)"></span>
                 </div>
             </div>
         </section>
@@ -135,4 +114,6 @@
         </div>
         <h2 class="titulo-final">&copy;Unrotundo|Jose Luis Bastida Lorenzo</h2>
     </footer>
+
+    <script src="js/slider.js"></script>
 </body>
