@@ -114,14 +114,12 @@ nav a:hover{/*Para que esté subrayado y se vea en negro cuando pasemos el rató
     max-width: 400px;
 }
 /*Galería*/
+
 .peliculas{
     background: #eee8e8;
     padding: 20px;
 }
-.series{
-    background: #eee8e8;
-    padding: 20px;
-}
+
 .slide-contenedor{
     max-width:100%;
     max-height: 100vh;
@@ -235,7 +233,17 @@ footer{
     margin-top: 20px;
     color: #9e9797;
 }
-
+@media screen and (max-width: 800px){
+    .imagen-intro{
+        grid-column: 1/-1;
+    }
+    .contenido-textos{
+        grid-column: 1/-1;
+    }
+    .slide-contenedor{
+        width: 80%;
+    }
+}
 
 
 

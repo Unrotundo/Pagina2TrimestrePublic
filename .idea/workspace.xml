@@ -20,11 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b05e1dc-fc12-4dda-8eff-cbc3b7f084aa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/0.1/estilo0.1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/slider.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/estilo.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/estiloIndex.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/estiloIndex.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/estiloIndex.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/cuenta.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/cuenta.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/codigo.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/validacion.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +84,8 @@
       <workItem from="1613586308329" duration="14622000" />
       <workItem from="1613644163808" duration="648000" />
       <workItem from="1614239739827" duration="11308000" />
+      <workItem from="1614289133010" duration="174000" />
+      <workItem from="1614351348408" duration="2566000" />
     </task>
     <servers />
   </component>
@@ -100,6 +102,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="293" y="202" key="#Web_Browsers" timestamp="1614246066217">
