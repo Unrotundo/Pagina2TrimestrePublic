@@ -20,11 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b05e1dc-fc12-4dda-8eff-cbc3b7f084aa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/estiloIndex.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/estiloIndex.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/cuenta.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/cuenta.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/estiloValidación.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/estiloValidación.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/codigo.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/validacion.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,16 +53,19 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/css" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\soyjo\Documents\GitHub\LenguajeDeMarcas\Pagina2Trimestre\js" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\soyjo\Documents\GitHub\LenguajeDeMarcas\Pagina2TrimestrePublic\css" />
+      <recent name="C:\Users\soyjo\Documents\GitHub\LenguajeDeMarcas\Pagina2TrimestrePublic\html" />
+      <recent name="C:\Users\soyjo\Documents\GitHub\LenguajeDeMarcas\Pagina2TrimestrePublic" />
       <recent name="C:\Users\soyjo\Documents\GitHub\LenguajeDeMarcas\Pagina2Trimestre\js" />
     </key>
   </component>
@@ -86,6 +86,7 @@
       <workItem from="1614239739827" duration="11308000" />
       <workItem from="1614289133010" duration="174000" />
       <workItem from="1614351348408" duration="2566000" />
+      <workItem from="1614633163681" duration="140000" />
     </task>
     <servers />
   </component>
@@ -113,10 +114,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1614242705348" />
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1614248509195">
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1614633259701">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1614248509195" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1614633259701" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1614240250638">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
