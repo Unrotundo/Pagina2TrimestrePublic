@@ -5,14 +5,14 @@ function avanzaSlide(n){/*Si le damos a la flecha se le aplicará +1 o -1 si le 
     muestraSlides( indice+=n );
 }
 
-function posicionSlide(n){
+function posicionSlide(n){/*Sirve para que funcione la barra*/
     muestraSlides(indice=n);
 }
-setInterval(function tiempo(){
+setInterval(function tiempo(){/*Para que las imágenes vayan pasando solos*/
     muestraSlides(indice+=1)
 },4000);
 
-function muestraSlides(n){/*Creamos el algoritmo para pasar de imagen*/
+function muestraSlides(n){/*Creamos un algoritmo que pasa de la primera ala última imagen y viceversa*/
     let i;
     let slides = document.getElementsByClassName('miSlider');
     let barras = document.getElementsByClassName('barra');
@@ -29,8 +29,6 @@ function muestraSlides(n){/*Creamos el algoritmo para pasar de imagen*/
     for(i = 0; i < barras.length; i++){
         barras[i].className = barras[i].className.replace(" active", "");
     }
-
     slides[indice-1].style.display = 'block';
     barras[indice-1].className += ' active';
-
 }

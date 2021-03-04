@@ -7,15 +7,21 @@
     <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="../index.html">Inicio</a>
-            <a href="#">Acerca de</a>
-            <a href="#">Películas</a>
-            <a>|</a>
-            <a href="cuenta.html">Cuenta</a>
-        </nav>
-    </header>
+    <nav class="navegacion">
+        <ul class="menu">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href='#AcercaDe'>Acerca de</a></li>
+            <li><a href='#Peliculas'>Películas</a>
+                <ul class="submenu">
+                    <li><a href="elResplandor.html">El Resplandor</a></li>
+                    <li><a href="babyDriver.html">Baby Driver</a></li>
+                    <li><a href="reservoirDogs.html">Reservoir Dogs</a></li>
+                </ul>
+            </li>
+            <li class="item"><a>|</a></li>
+            <li class="item"> <a href="cuenta.html">Cuenta</a></li>
+        </ul>
+    </nav>
     <main>
         <form action="" method="POST" id="form">
             <div class="form">

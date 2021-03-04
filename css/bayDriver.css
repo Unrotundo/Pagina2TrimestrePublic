@@ -21,6 +21,9 @@ body{
     overflow: hidden;/*Para que si se sale algun elemento se oculte*/
     align-items: center;/*Propidedad que hace que se pongan en el centro*/
 }
+.ancho{
+    max-width: 1500px;
+}
 
 /*HEADER*/
 .titulo{
@@ -33,13 +36,11 @@ body{
 header{
     width: 100%;
     height: 600px;
-    /*Estas lineas de código las saqué de esta página: https://uigradients.com/#Bighead, y le añadí transparencia con el formato hsla, y una imágen de fondo*/
-    background: linear-gradient(to right, hsla(296,76%, 31%,0.5), hsla(0,73%,69%,0.5)),url("../img/inicio1.jpg");
+    background: url("../img/inicioBaby.jpg");
     background-size: cover;/*Para que ocupe lo que pueda*/
     background-attachment: fixed;/*Para que la imagen del fondo se quede fija*/
     position:relative;
 }
-
 .navegacion{
     text-align: right;
     padding: 30px 50px 0px 0px;
@@ -81,17 +82,16 @@ header{
     visibility: visible;
     opacity: 1;
 }
-
 .textos-header{
-    display:flex;/*Tipo de organización*/
-    height: 430px;
-    text-align: center;/*Para que se centre en el medio del ancho*/
-    justify-content: center;/*Para que se centre en el medio del alto*/
-    flex-direction: column;/*Para que se pongan uno encima del otro*/
+    padding-bottom: 30px;
+    margin:auto;
+    width: 100%;
+    height: auto;
+    grid-column: 1/-1;
 }
-.textos-header h1{
-    font-size: 50px;
-    color: white;
+.imagen-header{
+    width: 100%;
+    max-width: 800px;
 }
 .ola{
     height: 150px;
@@ -108,7 +108,6 @@ header{
     stroke: none;
     fill: #fff;
 }
-
 /*MAIN*/
 /*Intro*/
 .imagen-intro{
@@ -116,6 +115,7 @@ header{
     width: 100%;
     height: auto;
     grid-column: 1/7;
+    margin: auto;
 }
 .contenido-textos{
     grid-column:7/13 ;
@@ -143,83 +143,104 @@ header{
     width: 95%;
     max-width: 400px;
 }
-/*Galería*/
 
-.peliculas{
+/*Reparto*/
+.reparto{
+    margin-top: 30px;
+    padding-bottom: 30px;
     background: #eee8e8;
-    padding: 20px;
 }
-
-.slide-contenedor{
-    max-width:100%;
-    max-height: 100vh;
-    width: 50%;
-    position: relative;
-    overflow: hidden;
+.tarjeta-wrap{
     margin: auto;
-
+    grid-column: span 3;
+    perspective: 800px;
 }
-.miSlider img{
-    width: 100%;
-    height:500px;
-    object-fit: cover;/*Para que la imagen no pierda mucha calidad*/
-    vertical-align: top;
-    transition: 4.5s;
+.tarjeta{
+    width: 300px;
+    height: 350px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: .7s ease;
+    box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
 }
-.direcciones{
+.adelante, .atras{
     width: 100%;
     height: 100%;
-    position: absolute;/*Para que se posicione dentro del elemento padre(el contenedor)*/
+    position: absolute;
     top: 0;
-    display: flex;/*Utilizamos flexbox para colocar las flechas*/
-    justify-content: space-between;
-    align-items: center;
+    left: 0;
+    backface-visibility: hidden;
+}
+.atras{
+    transform: rotateY(180deg);
+    padding: 15px;
+    color: white;
+    background: url("../img/tarjetaBaby.jpg");
+    background-size: cover;
+    text-align: center;
+}
+.atras h3{
+    font-size: 30px;
+    top:0px;
+}
+.atras p{
+    margin: 10px;
+    padding: 10px;
+    background: #414141;
+    border-radius: 10%;
+}
+
+.boton{
+    text-decoration:none;
+    font-weight: 600;
     font-size: 20px;
+    color: #ffffff;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-width: 3px;
+    border-style: solid;
+    border-color: #ffffff;
+    font-family: "Typewriter";
 }
 
-.direcciones a{
-    color: #fff;
-    display: inline-block;
-    padding: 20px;
-    text-decoration: none;
+.tarjeta-wrap:hover .tarjeta{
+    transform: rotateY(180deg);
 }
 
-.direcciones a:hover{/*Para que al pasar el ratón por encima de la flecha aparezca un cuadrado alrrededor*/
-    background: rgba(0, 0, 0, 0.5);
-    transition: .5s;
+.card1{
+    background-image: url("../img/reparto_baby1.jpg");
+    background-size: cover;
 }
 
-.barras{
-    position: absolute;/*Para que se posicione dentro del elemento padre(el contenedor)*/
-    bottom: 0;
+.card2{
+    background-image: url("../img/reparto_baby2.jpg");
+    background-size: cover;
+}
+
+.card3{
+    background-image: url("../img/reparto_baby3.jpg");
+    background-size: cover;
+}
+.card4{
+    background-image: url("../img/reparto_baby4.jpg");
+    background-size: cover;
+}
+/*Galería*/
+.caja{
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin: auto;
+    width: 90%;
+    max-width: 1500px;
+    height: 100%;
+    gap: 10px;
+}
+.img{
     width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom:15px;
+    height: 500px;
+    object-fit: cover;
 }
-.barra{
-    cursor: pointer;
-    height:2px;
-    width: 25px;
-    margin: 0 2px;
-    background: #dcdde1;
-    display: inline-block;
-    margin-left: 3px;
-}
-.active{/*Para que cuando esté activa aparezca con el color*/
-    background-color: #e74c3c;
-}
-/*Animación para que al pasar de imagen haya un degradado*/
-.fade{
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@keyframes fade {
-    from {opacity: 0.4%;}
-    to{opacity:100%;}
-}
-
 /*Footer*/
 footer{
     background: #414141;
@@ -261,7 +282,15 @@ footer{
     margin-top: 20px;
     color: #9e9797;
 }
+@media screen and (max-width: 1400px){
+    .tarjeta-wrap{
+        grid-column: span 6;
+    }
+}
 @media screen and (max-width: 800px){
+    .caja{
+        grid-template-columns: repeat(3,1fr);
+    }
     .imagen-intro{
         grid-column: 1/-1;
     }
@@ -272,6 +301,9 @@ footer{
         width: 80%;
     }
 }
+
+
+
 
 
 

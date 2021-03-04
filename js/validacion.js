@@ -6,13 +6,13 @@ let form = document.getElementById("form")
 let parrafo = document.getElementById("warnings")
 
 form.addEventListener("submit", e=>{
-    e.preventDefault()
+    e.preventDefault()/*Concretamente como podemos hacer para eliminar el comportamiento por defecto de un elemento html.*/
     let warnings = ""
     let entrar = false
     let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/
     let regexPassword = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/
     parrafo.innerHTML = ""
-    if(nombre.value.length <6){
+    if(nombre.value.length <4){
         warnings += `El nombre no es valido <br>`
         entrar = true
     }

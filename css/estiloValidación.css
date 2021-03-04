@@ -14,28 +14,53 @@ body{
     background-size: cover;/*Para que ocupe lo que pueda*/
     background-attachment: fixed;/*Para que la imagen del fondo se quede fija*/
     position:relative;
-    font-family: "Arial";
+    font-family: "Typewriter";
 }
 
 header{
     width: 100%;
     position:relative;
 }
-nav{
+.navegacion{
     text-align: right;
     padding: 30px 50px 0px 0px;
+    position: sticky;
     top:0;
 }
-
-nav a{
-    color:white;
-    margin-right: 10px;
-    text-decoration: none;/*Para que no esté subrayado*/
+.navegacion ul{
+    list-style: none;
 }
-nav a:hover{/*Para que esté subrayado y se vea en negro cuando pasemos el ratón por encima*/
-    color: black;
-    text-decoration: underline;
-    font-size: 20px;
+
+.menu > li{
+    position: relative;
+    display: inline-block;
+}
+.menu > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+.menu li a:hover{
+    color: #CE7D35;
+    transition: all .3s;
+}
+.submenu{
+    position: absolute;
+    width: 120%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+.submenu li a{
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+.menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
 }
 
 main{
